@@ -65,4 +65,4 @@ def app(df, X, y):
 
         
         # Print teh score of the model 
-        st.sidebar.write("The model used is trusted by civil engineers and has an accuracy of ", round((score*100*k),2),"%")
+        st.sidebar.write("The model used is trusted by civil engineers and has an accuracy of ", score,"%")
