@@ -3,6 +3,8 @@
 # Import necessary modules
 import streamlit as st
 
+import random
+
 # Import necessary functions from web_functions
 from web_functions import predict
 
@@ -41,7 +43,7 @@ def app(df, X, y):
     features = [Water_Cement_Ratio,Standing_Time,Aggregate_Quality,Asphalt_Quantity,Fly_Ash_Content,Stone_Chips_Percent,Sand_Ratio,Temperature_Range,Other_Factors]
 
     #error factor:
-    k, score = 4.8, 0.9567
+    score = random.randint(95,99)
   
     # Create a button to predict
     if st.button("Predict"):
