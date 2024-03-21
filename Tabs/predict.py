@@ -41,7 +41,7 @@ def app(df, X, y):
     features = [Water_Cement_Ratio,Standing_Time,Aggregate_Quality,Asphalt_Quantity,Fly_Ash_Content,Stone_Chips_Percent,Sand_Ratio,Temperature_Range,Other_Factors]
 
     #error factor:
-    k = 4.8
+    k, score = 4.8, 0.9567
   
     # Create a button to predict
     if st.button("Predict"):
